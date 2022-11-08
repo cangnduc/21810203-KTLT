@@ -5,6 +5,41 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <table class ="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Expiration</th>
+                <th>Category</th>
+                <th>Action</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @Model.thongbao;
+            @foreach(var product in @Model.CuaHang)
+            {
+                foreach(var item in product.dsach)
+                {
+                    <tr>
+                         <th>@item.id</th>
+                         <th>@item.name</th>
+                         <th>@item.quantity</th>
+                         <th>@item.price</th>
+                         <th>@item.Expiration</th>
+                         <th>@product.name</th>
+                         <th>
+                             <a href =''>Add</a>
+                         </th>
+
+                    </tr>
+                }
+               
+            }
+           
+        </tbody>
+    </table>
 </div>

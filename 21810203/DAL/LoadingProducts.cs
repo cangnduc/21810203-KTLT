@@ -2,17 +2,17 @@
 {
     public class LoadingProducts
     {
-        public string LoadingProductsFile(string path)
+        public static string LoadingProductsFile(string path)
         {
             StreamReader sr = new StreamReader(path);
             string lines = sr.ReadToEnd();
             sr.Close();
             return lines;
         }
-        public void savingProduct(string lines)
+        public void savingProduct(string path, string lines)
         {
-            StreamWriter sw = new StreamWriter(lines);
-            sw.WriteLine();
+            StreamWriter sw = new StreamWriter(path);
+            sw.WriteLine(lines);
             sw.Close();
         }
     }
