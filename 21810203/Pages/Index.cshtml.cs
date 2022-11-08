@@ -17,8 +17,8 @@ namespace _21810203.Pages
 
         public void OnGet()
         {
-            thongbao = ProductHandle.LoadProducts(CuaHang);
-            Console.Write(CuaHang.Count);
+            CuaHang = ProductHandle.LoadProducts(CuaHang);
+            Console.WriteLine(1 + CuaHang.Count());
         }
     }
 }
