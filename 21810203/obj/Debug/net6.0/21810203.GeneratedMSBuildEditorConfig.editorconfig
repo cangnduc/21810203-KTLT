@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\CLC\Desktop\memu2\pre\21810203-KTLT\21810203
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/CLC/Desktop/memu2/pre/21810203-KTLT/21810203/Pages/add_product.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkX3Byb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/CLC/Desktop/memu2/pre/21810203-KTLT/21810203/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

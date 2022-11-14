@@ -6,7 +6,7 @@
         public string name;
         public double price;
         public int quantity;
-        public string Expiration;
+        public DateTime Expiration;
         public bool isDeleted;
     }
     public struct Products

@@ -6,7 +6,7 @@
         "id": 2,
         "name": "keodua",
         "price": 3000.0,
-        "Expiration": "20/10/2022",
+        "Expiration": "2022-10-08",
         "isDeleted": 1,
         "Quantity": 0
       },
@@ -14,7 +14,7 @@
         "id": 3,
         "name": "keokhom",
         "price": 4000.0,
-        "Expiration": "20/10/2022",
+        "Expiration": "2022-10-08",
         "isDeleted": 1,
         "Quantity": 0
       },
@@ -35,7 +35,7 @@
         "id": 1,
         "name": "thuocme",
         "price": 2000.0,
-        "Expiration": "20/10/2022",
+        "Expiration": "2022-10-08",
         "isDeleted": 1,
         "Quantity": 0
       },
@@ -43,7 +43,7 @@
         "id": 2,
         "name": "thuocdua",
         "price": 3000.0,
-        "Expiration": "20/10/2022",
+        "Expiration": "2022-10-08",
         "isDeleted": 1,
         "Quantity": 0
       },
@@ -51,7 +51,7 @@
         "id": 4,
         "name": "Thức Ăn",
         "price": 33333.0,
-        "Expiration": "2022-10-06",
+        "Expiration": "2022-10-08",
         "isDeleted": 1,
         "Quantity": 0
       },
@@ -59,7 +59,7 @@
         "id": 5,
         "name": "ruou",
         "price": 2020.0,
-        "Expiration": "2022-10-14",
+        "Expiration": "2022-10-08",
         "isDeleted": 1,
         "Quantity": 0
       }
@@ -72,7 +72,7 @@
         "id": 1,
         "name": "honda",
         "price": 33333.0,
-        "Expiration": "2022-10-06",
+        "Expiration": "2022-10-08",
         "isDeleted": 1,
         "Quantity": 0
       }
@@ -85,7 +85,7 @@
         "id": 1,
         "name": "windown",
         "price": 111.0,
-        "Expiration": "2190-02-01",
+        "Expiration": "2022-10-08",
         "isDeleted": 1,
         "Quantity": 0
       }

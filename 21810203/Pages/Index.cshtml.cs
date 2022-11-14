@@ -9,7 +9,7 @@ namespace _21810203.Pages
         public List<Products> CuaHang = new List<Products>();
         public string thongbao = string.Empty;
         private readonly ILogger<IndexModel> _logger;
-
+        public bool kiemtra = false;
         public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;

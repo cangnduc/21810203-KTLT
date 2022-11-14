@@ -24,18 +24,19 @@
             {
                 foreach(var item in product.dsach)
                 {
+                    if(@item.isDeleted) {
                     <tr>
                          <th>@item.id</th>
                          <th>@item.name</th>
                          <th>@item.quantity</th>
                          <th>@item.price</th>
-                         <th>@item.Expiration</th>
+                         <th>@item.Expiration.ToShortDateString()</th>
                          <th>@product.name</th>
                          <th>
                              <a href =''>Add</a>
                          </th>
 
-                    </tr>
+                    </tr>}
                 }
                
             }
