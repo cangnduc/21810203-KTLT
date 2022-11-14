@@ -8,6 +8,7 @@
         public int quantity;
         public DateTime Expiration;
         public bool isDeleted;
+        
     }
     public struct Products
     {

@@ -33,7 +33,8 @@
                          <th>@item.Expiration.ToShortDateString()</th>
                          <th>@product.name</th>
                          <th>
-                             <a href =''>Add</a>
+                             <a href ="/Edit-Product?id=@item.id&name=@product.name" class = "btn-primary btn">Edit</a>
+                             <a href ="/delete-product?id=@item.id&name=@product.name" class = "btn-danger btn">Delete</a>
                          </th>
 
                     </tr>}

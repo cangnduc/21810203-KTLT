@@ -42,8 +42,10 @@ namespace _21810203.Service
                 if (pro.name == tukhoa)
                 {
                     pro.dsach.Add(sp);
+                    Console.WriteLine("add thanh cong");
                 }
             }
+            
             return CuaHang;
         }
         public static void SaveCH(List<Products> CuaHang)
@@ -51,5 +53,64 @@ namespace _21810203.Service
             LoadingProducts.SaveCH(CuaHang);
             
         }
+        public static List<Products> RemoveItem(List<Products> CuaHang, string CateNam, int id)
+        {
+            foreach (var items in CuaHang)
+            {
+                if (items.name == CateNam)
+                {
+                    items.dsach.RemoveAll(r => r.id == id);
+                }
+            }
+            return CuaHang;
+        }
+        public static int FindLoaiHangID(List<Products> CuaHang, string name )
+        {
+            for(int i = 0; i<CuaHang.Count; i ++)
+            {
+                if (CuaHang[i].name == name)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+        public static void DeletedProduct(List<Products> CuaHang,string LoaiHang, int ID)
+        {
+            
+            product temp = new product();
+            int a = FindLoaiHangID(CuaHang, LoaiHang);
+            for (int i =0; i<CuaHang[a].dsach.Count;i++)
+            {
+                if(CuaHang[a].dsach[i].id == ID)
+                {
+                    temp = CuaHang[a].dsach[i];
+                    temp.isDeleted = false;
+                    CuaHang[a].dsach[i] = temp;
+                    break;
+
+                }
+            } 
+        }
+        public static product FindProduct(List<Products> CuaHang, string name, int ID)
+		{
+            product product = new product();
+            foreach(var prod in CuaHang)
+			{
+                if(prod.name == name)
+				{
+                    foreach(var sp in prod.dsach)
+					{
+                        if(sp.id == ID)
+						{
+                            product = sp;
+                            break;
+						}
+					}
+				}
+			}
+            return product;
+		}
+        
     }
 }
