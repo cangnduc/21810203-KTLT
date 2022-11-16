@@ -5,6 +5,11 @@
 }
 
 <div class="text-center">
+    <form class = 'form-control' method ='post'>
+        <input type ='text' name ='Timkiem'/>
+        <input type='submit' value='tim' class ='btn btn-primary' />
+    </form>
+     @Model.thongbao
     <table class ="table">
         <thead>
             <tr>
@@ -19,12 +24,12 @@
             </tr>
         </thead>
         <tbody>
-            @Model.thongbao;
+           
             @foreach(var product in @Model.CuaHang)
             {
                 foreach(var item in product.dsach)
                 {
-                    if(@item.isDeleted) {
+                    if(@item.isDeleted == false) {
                     <tr>
                          <th>@item.id</th>
                          <th>@item.name</th>

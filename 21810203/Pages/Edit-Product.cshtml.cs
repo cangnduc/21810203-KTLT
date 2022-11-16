@@ -20,9 +20,11 @@ namespace _21810203.Pages
         public DateTime prod_date { get; set; }
         [BindProperty]
         public string? ProductsName { get;set; }
+        
         public List<Products>? CuaHang;
         public product product;
         public string thongbao = string.Empty;
+        
         public void OnGet()
         {
             CuaHang = ProductHandle.LoadProducts(CuaHang);
@@ -30,22 +32,29 @@ namespace _21810203.Pages
 			{
                 product = ProductHandle.FindProduct(CuaHang, name, id);
             }
+            if(ProductsName != null) { thongbao = ProductsName; }
+            
             
         }
         public void OnPost()
-		{
+        {
             CuaHang = ProductHandle.LoadProducts(CuaHang);
-            if(prod_name == null || prod_price <0 || ProductsName == null)
+            if (prod_name == null || prod_price < 0 || ProductsName == null )
 			{
                 thongbao = "please fill in all information";
 			}
             else
 			{
-                
+                if(name != null)
+                {
+                    ProductHandle.DeletedProduct(CuaHang, name, id);
+
+                }
                 product.id = ProductHandle.GenerateID(ProductsName, CuaHang);
                 product.name = prod_name;
                 product.price = prod_price;
                 product.Expiration = prod_date;
+                product.isDeleted = false;
                 CuaHang = ProductHandle.Add_Product(CuaHang, product, ProductsName);
                 ProductHandle.SaveCH(CuaHang);
                 thongbao = "Thanhcong";

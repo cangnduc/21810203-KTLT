@@ -60,8 +60,10 @@ namespace _21810203.Service
                 if (items.name == CateNam)
                 {
                     items.dsach.RemoveAll(r => r.id == id);
+                    Console.WriteLine("xoa thanh cong");
                 }
             }
+
             return CuaHang;
         }
         public static int FindLoaiHangID(List<Products> CuaHang, string name )
@@ -80,12 +82,12 @@ namespace _21810203.Service
             
             product temp = new product();
             int a = FindLoaiHangID(CuaHang, LoaiHang);
-            for (int i =0; i<CuaHang[a].dsach.Count;i++)
+            for (int i = 0; i < CuaHang[a].dsach.Count; i++)
             {
                 if(CuaHang[a].dsach[i].id == ID)
                 {
                     temp = CuaHang[a].dsach[i];
-                    temp.isDeleted = false;
+                    temp.isDeleted = true;
                     CuaHang[a].dsach[i] = temp;
                     break;
 
@@ -111,6 +113,48 @@ namespace _21810203.Service
 			}
             return product;
 		}
+        public static bool isLoaiHangExist(List<Products>CuaHang, string loaihang)
+        {
+            foreach (var prod in CuaHang)
+            {
+                if (prod.name == loaihang)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        public static void addLoaiHang(List<Products> CuaHang, string loaihang)
+        {
+            if(isLoaiHangExist(CuaHang, loaihang))
+            {
+                Products temp = new Products();
+                temp.name = loaihang;
+                temp.dsach = new List<product>();
+                CuaHang.Add(temp);
+            }
+            
+        }
+        public static List<Products> TimKiem(List<Products> CuaHang, string tukhoa)
+        {
+            
+            foreach (var prods in CuaHang)
+            {
+                for (int i = 0; i < prods.dsach.Count; i++)
+                {
+                    
+                    if (prods.dsach[i].name.ToLower().ToString().Contains(tukhoa.ToLower().ToString())) 
+                    {
+                        product temp = new product();
+                        temp = prods.dsach[i];
+                        temp.isDeleted = true;
+                        prods.dsach[i] = temp;
+                        
+                    }
+                }
+            }
+            return CuaHang;
+        }
         
     }
 }

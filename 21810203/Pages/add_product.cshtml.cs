@@ -40,7 +40,7 @@ namespace _21810203.Pages
                     pro.name = prod_name;
                     pro.price = double.Parse(prod_price);
                     pro.quantity = 1;
-                    pro.isDeleted = true;
+                    pro.isDeleted = false;
                     pro.Expiration = prod_date;
                     CuaHang = ProductHandle.Add_Product(CuaHang, pro, ProductsName);
                     ProductHandle.SaveCH(CuaHang);
