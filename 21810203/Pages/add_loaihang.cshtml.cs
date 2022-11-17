@@ -12,6 +12,7 @@ namespace _21810203.Pages
         public string thongbao = string.Empty;
         public void OnGet()
         {
+            CuaHang = ProductHandle.LoadProducts(CuaHang);
         }
         public void OnPost()
         {

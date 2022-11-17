@@ -11,7 +11,7 @@ namespace _21810203.Pages
         private readonly ILogger<IndexModel> _logger;
         public bool kiemtra = false;
         [BindProperty]
-        public string Timkiem { get; set; }
+        public string? Timkiem { get; set; }
         public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;

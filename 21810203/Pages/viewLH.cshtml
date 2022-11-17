@@ -1,31 +1,8 @@
 ﻿@page
-@model IndexModel
+@model _21810203.Pages.viewLHModel
 @{
-    ViewData["Title"] = "Home page";
 }
-
-<div class="text-center">
-    <div class = 'container'>
-        <form class = 'form-control' method ='post'>
-        <div class = 'row'>
-            <div class = 'col-3'>
-                <input type ='text' name ='Timkiem' class = 'form-control' placeholder ='Enter keyword'/>
-            </div>
-             <div class ='col-1'>
-                <input type='submit' value='tim' class ='btn btn-primary' />
-             </div>
-             <div class ='col'>
-                 <span class='mt-auto'>
-                     @Model.thongbao
-                 </span>
-                  
-             </div>
-        </div>
-    </form>
-    </div>
-    
-    
-    <table class ="table">
+<table class ="table">
         <thead>
             <tr>
                 <th>ID</th>
@@ -42,7 +19,8 @@
            
             @foreach(var product in @Model.CuaHang)
             {
-                foreach(var item in product.dsach)
+                if(product.name == Model.LoaiHang) {
+                    foreach(var item in product.dsach)
                 {
                     if(@item.isDeleted == false) {
                     <tr>
@@ -59,9 +37,10 @@
 
                     </tr>}
                 }
+                }
+                
                
             }
            
         </tbody>
     </table>
-</div>

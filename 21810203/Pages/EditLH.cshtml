@@ -1,0 +1,13 @@
+﻿@page
+@model _21810203.Pages.EditLHModel
+@{
+}
+<div class='container'>
+	<form class ='form-control' method = 'post'>
+		<h3>Thay Doi Ten Loai Hang</h3>
+		<input type = 'text' class ='form-control mb-2' name='Ten_LH' placeholder = "New Name" />
+		<input type = 'submit' class = 'btn btn-primary' value = "Xac Nhan"/>
+		<a href = '/add_loaihang' class='btn btn-primary'>Back</a>
+	</form>
+	@Model.thongbao
+</div>

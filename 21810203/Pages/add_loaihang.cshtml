@@ -1,11 +1,47 @@
 ﻿@page
+@using _21810203.Service;
 @model _21810203.Pages.add_loaihangModel
 @{
 }
 <div class = 'container'>
-	<form class = 'form-control' method = 'post'>
-		<input type='text' name = 'loaihang' placeholder='Nhap Loai Hang'/>
-		<input type='submit' value = 'Luu' class ='btn btn-primary'/>
-	</form>
-	@Model.thongbao
+	<div class = 'row'>
+		<div class ='col-3'>
+			<form class = 'form-control' method = 'post'>
+				<h4>Them Loai Hang</h4>
+				<input type='text' name = 'loaihang' placeholder='Nhap Loai Hang' class='form-control'/>
+				<input type='submit' value = 'Luu' class ='btn btn-primary mt-2 justify-content-sm-end'/>
+			</form>
+			@Model.thongbao
+		</div>
+		<div class = 'col-8'>
+			<div class = 'container'>
+				<h4>Danh Sach Loai Hang</h4>
+				<div class = 'row border'>
+					
+					<div class = 'col-1  '>STT</div>
+
+					<div class = 'col-3'>Name</div>
+					<div class = 'col-3'>Tong So Hang</div>
+					<div class = 'col'>Action</div>
+				</div>
+				@for(int i =0; i < Model.CuaHang.Count;i++)
+				{
+					<div class = 'row  mt-2 border'>
+					<div class = 'col-1 '>@(i+1)</div>
+					<div class = 'col-3'>@Model.CuaHang[i].name</div>
+					<div class = 'col-3'>@ProductHandle.TongLoaiHang(Model.CuaHang,@Model.CuaHang[i].name)</div>
+					<div class = 'col'>
+						<a href="/DeleteLH?LoaiHang=@Model.CuaHang[i].name" class = 'btn-danger btn-sm'>Delete</a>
+						<a href="/EditLH?LoaiHang=@Model.CuaHang[i].name" class = 'btn-primary btn-sm'>Edit</a>
+						<a href="/viewLH?LoaiHang=@Model.CuaHang[i].name" class = 'btn-primary btn-sm'>View</a>
+					</div>
+				</div>
+				}
+				
+			</div>
+			
+		</div>		
+	
+	</div>
+	
 </div>

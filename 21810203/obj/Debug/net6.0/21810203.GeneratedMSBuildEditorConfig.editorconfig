@@ -27,8 +27,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGVsZXRlLXByb2R1Y3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/CLC/Desktop/memu2/pre/21810203-KTLT/21810203/Pages/DeleteLH.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsZXRlTEguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/CLC/Desktop/memu2/pre/21810203-KTLT/21810203/Pages/Edit-Product.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdC1Qcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CLC/Desktop/memu2/pre/21810203-KTLT/21810203/Pages/EditLH.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdExILmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/CLC/Desktop/memu2/pre/21810203-KTLT/21810203/Pages/Error.cshtml]
@@ -39,12 +47,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/CLC/Desktop/memu2/pre/21810203-KTLT/21810203/Pages/nhap_hang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbmhhcF9oYW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/CLC/Desktop/memu2/pre/21810203-KTLT/21810203/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/CLC/Desktop/memu2/pre/21810203-KTLT/21810203/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/CLC/Desktop/memu2/pre/21810203-KTLT/21810203/Pages/viewLH.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdmlld0xILmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/CLC/Desktop/memu2/pre/21810203-KTLT/21810203/Pages/_ViewImports.cshtml]

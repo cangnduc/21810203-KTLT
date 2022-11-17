@@ -16,3 +16,10 @@ html {
 body {
   margin-bottom: 60px;
 }
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
