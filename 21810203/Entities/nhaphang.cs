@@ -2,14 +2,9 @@
 {
     public struct PhieuNhap
     {
-        public int MaPhieu;
+        public int STT;
         public DateTime date;
-        public List<ChiTietPhieuNhap> chiTietPhieuNhap;
-    }
-    public struct ChiTietPhieuNhap
-    {
-        public int stt;
-        public string ItemName;
-        public int SoLuong;
+        public string tenhang;
+        public int soluong;
     }
 }

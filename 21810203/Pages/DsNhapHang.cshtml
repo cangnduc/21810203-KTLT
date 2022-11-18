@@ -1,0 +1,31 @@
+﻿@page
+@model _21810203.Pages.DsNhapHangModel
+@{
+}
+<div class ='container'>
+	<table class='table'>
+		<thead>
+			<tr >
+				<th>STT</th>
+				<th>Tên hàng</th>
+				<th>Ngày nhập</th>
+				<th>Số Lượng</th>
+			</tr>
+		</thead>
+		<tbody>
+			@if(Model.PhieuNhaps != null)
+			{
+				foreach(var temp in Model.PhieuNhaps) {
+				<tr>
+				<th>@temp.STT</th>
+				<th>@temp.tenhang</th>
+				<th>@temp.date.ToShortDateString()</th>
+				<th>@temp.soluong</th>
+			</tr>
+			}
+			}
+			
+			
+		</tbody>
+	</table>
+</div>

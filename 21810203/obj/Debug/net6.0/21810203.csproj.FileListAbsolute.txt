@@ -268,3 +268,4 @@ C:\Users\CLC\Desktop\memu2\pre\21810203-KTLT\21810203\bin\Debug\net6.0\runtimes\
 C:\Users\CLC\Desktop\memu2\pre\21810203-KTLT\21810203\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\CLC\Desktop\memu2\pre\21810203-KTLT\21810203\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\CLC\Desktop\memu2\pre\21810203-KTLT\21810203\obj\Debug\net6.0\21810203.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\CLC\Desktop\memu2\pre\21810203-KTLT\21810203\bin\Debug\net6.0\Nhaphang.json

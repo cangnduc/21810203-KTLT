@@ -196,5 +196,25 @@ namespace _21810203.Service
             }
             return tong;
         }
+        public static void NhapHang(List<Products> CuaHang, string tenhang, int soluong)
+        {
+            product temp = new product();
+            foreach(var prod in CuaHang)
+            {
+                for (int j = 0; j < prod.dsach.Count; j++) { 
+                    if(prod.dsach[j].name == tenhang)
+                    {
+                        temp = prod.dsach[j];
+                        temp.quantity += soluong;
+                        prod.dsach[j] = temp;
+                        break;
+                    }
+                }
+
+            }
+
+            ProductHandle.SaveCH(CuaHang);
+            Console.WriteLine("thangcong");
+        }
     }
 }

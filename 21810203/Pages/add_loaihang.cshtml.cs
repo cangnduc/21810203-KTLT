@@ -16,13 +16,14 @@ namespace _21810203.Pages
         }
         public void OnPost()
         {
-            if(loaihang == null)
+            CuaHang = ProductHandle.LoadProducts(CuaHang);
+            if (loaihang == null)
             {
                 thongbao = "Please fill in";
             }
             else
             {
-                CuaHang = ProductHandle.LoadProducts(CuaHang);
+                
                 ProductHandle.addLoaiHang(CuaHang, loaihang);
                 ProductHandle.SaveCH(CuaHang);
                 thongbao = "Add Thanh Cong";
